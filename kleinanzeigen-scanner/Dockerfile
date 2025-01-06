@@ -5,8 +5,7 @@ FROM $BUILD_FROM
 # Install build dependencies required for pycurl
 RUN apk update && apk add --no-cache \
     build-base \
-    libcurl \
-    libcurl-dev
+    curl-dev
 
 
 # Copy root filesystem
