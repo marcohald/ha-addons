@@ -6,4 +6,5 @@ FROM $BUILD_FROM
 # Copy root filesystem
 COPY rootfs /
 
+RUN find /opt/
 RUN pip install -r /opt/kleinanzeigen-scanner/requirements.txt
