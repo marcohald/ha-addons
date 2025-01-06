@@ -6,11 +6,7 @@ FROM $BUILD_FROM
 RUN apk update && apk add --no-cache \
     build-base \
     libcurl \
-    libcurl-dev \
-    python3-dev \
-    py3-pip \
-    && pip install --no-cache-dir pycurl \
-    && apk del build-base python3-dev
+    libcurl-dev
 
 
 # Copy root filesystem
