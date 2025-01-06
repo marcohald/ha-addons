@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/bin/python3
 
-echo "All done!" > /share/example_addon_output.txt
+import os
+msg = os.getenv(“MSG”,”Couldn’t find the environment variable”)
+print(msg)
