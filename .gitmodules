@@ -1,0 +1,3 @@
+[submodule "kleinanzeigen-scanner/rootfs/opt/kleinanzeigen-scanner"]
+	path = kleinanzeigen-scanner/rootfs/opt/kleinanzeigen-scanner
+	url = https://github.com/marcohald/Kleinanzeigen-Telegram-Bot.git
