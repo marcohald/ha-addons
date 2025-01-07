@@ -8,9 +8,13 @@
 
 # Declare variables
 declare TELEGRAM_API_TOKEN
+declare KLEINANZEIGEN_API_USER
+declare KLEINANZEIGEN_API_PW
 
 ## Get the 'message' key from the user config options.
 export TELEGRAM_API_TOKEN=$(bashio::config 'TELEGRAM_API_TOKEN')
+export KLEINANZEIGEN_API_USER=$(bashio::config 'KLEINANZEIGEN_API_USER')
+export KLEINANZEIGEN_API_PW=$(bashio::config 'KLEINANZEIGEN_API_PW')
 
 ## Print the message the user supplied, defaults to "Hello World..."
 bashio::log.info "${TELEGRAM_API_TOKEN:="No API Token"}"
