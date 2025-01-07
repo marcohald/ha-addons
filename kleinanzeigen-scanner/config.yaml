@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Kleinanzeigen Scanner
-version: "0.0.2"
+version: "0.0.3"
 slug: kleinanzeigen-scanner
 description: Kleinanzeigen Scanner
 url: "https://github.com/marcohald/ha-addons/tree/main/kleinanzeigen-scanner"
@@ -14,7 +14,7 @@ init: false
 map:
   - share:rw
 options:
-  token: ""
+  TELEGRAM_API_TOKEN: ""
 schema:
-  token: "str"
+  TELEGRAM_API_TOKEN: "str"
 image: "ghcr.io/marcohald/{arch}-addon-kleinanzeigen-scanner"

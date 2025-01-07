@@ -7,13 +7,13 @@
 # Add your code here
 
 # Declare variables
-declare message
+declare TELEGRAM_API_TOKEN
 
 ## Get the 'message' key from the user config options.
-message=$(bashio::config 'message')
+export TELEGRAM_API_TOKEN=$(bashio::config 'TELEGRAM_API_TOKEN')
 
 ## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${message:="Hello World..."}"
+bashio::log.info "${TELEGRAM_API_TOKEN:="No API Token"}"
 
 ## Run your program
 exec python3 /opt/kleinanzeigen-scanner/source/telegram_bot.py
