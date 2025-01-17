@@ -10,11 +10,15 @@
 declare TELEGRAM_API_TOKEN
 declare KLEINANZEIGEN_API_USER
 declare KLEINANZEIGEN_API_PW
+declare PERSISTENCE_FILE
+declare PERSISTENCE_FILE_BOT
 
 ## Get the 'message' key from the user config options.
 export TELEGRAM_API_TOKEN=$(bashio::config 'TELEGRAM_API_TOKEN')
 export KLEINANZEIGEN_API_USER=$(bashio::config 'KLEINANZEIGEN_API_USER')
 export KLEINANZEIGEN_API_PW=$(bashio::config 'KLEINANZEIGEN_API_PW')
+export PERSISTENCE_FILE=$(bashio::config 'PERSISTENCE_FILE')
+export PERSISTENCE_FILE_BOT=$(bashio::config 'PERSISTENCE_FILE_BOT')
 
 ## Print the message the user supplied, defaults to "Hello World..."
 bashio::log.info "${TELEGRAM_API_TOKEN:="No API Token"}"

@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Kleinanzeigen Scanner
-version: "0.0.4"
+version: "0.0.5"
 slug: kleinanzeigen-scanner
 description: Kleinanzeigen Scanner
 url: "https://github.com/marcohald/ha-addons/tree/main/kleinanzeigen-scanner"
@@ -17,8 +17,12 @@ options:
   TELEGRAM_API_TOKEN: ""
   KLEINANZEIGEN_API_USER: ""
   KLEINANZEIGEN_API_PW: ""
+  PERSISTENCE_FILE: "/data/registered_bots.pkl"
+  PERSISTENCE_FILE_BOT: "/data/bot_persistence.pkl"
 schema:
   TELEGRAM_API_TOKEN: "str"
   KLEINANZEIGEN_API_USER: "str"
   KLEINANZEIGEN_API_PW: "str"
+  PERSISTENCE_FILE: "str"
+  PERSISTENCE_FILE_BOT: "str"
 image: "ghcr.io/marcohald/{arch}-addon-kleinanzeigen-scanner"
